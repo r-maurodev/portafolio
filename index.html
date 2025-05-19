@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauricio Rodríguez | Desarrollador Backend Senior</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Mauricio Rodríguez</h1>
+                <h2>Desarrollador Backend Senior</h2>
+                <p>Experto en arquitecturas escalables, APIs RESTful e integraciones de sistemas</p>
+                <div class="header-buttons">
+                    <a href="#contact" class="btn btn-primary">Contacto</a>
+                    <a href="#" class="btn btn-secondary" id="download-cv">Descargar CV</a>
+                </div>
+            </div>
+            <div class="header-image">
+                <img src="images/backend_header.png" alt="Backend Development">
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">MR</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#virtues">Virtudes</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <span class="theme-toggle-text">Modo</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Soy un líder técnico con más de 20 años de experiencia en desarrollo backend, especializado en arquitecturas escalables, APIs RESTful e integraciones de sistemas en sectores financiero y asegurador.</p>
+                    <p>Cuento con amplio conocimiento en bases de datos (Oracle, SQL Server, MongoDB), lenguajes de programación (PL/SQL, Java, Python) y herramientas ETL. Domino metodologías Ágiles (Scrum, Kanban) y tengo capacidad probada para liderar equipos técnicos, gestionar proveedores y entregar soluciones de alto valor que cumplen con requerimientos de negocio, seguridad y rendimiento.</p>
+                    <p>Mi enfoque combina experiencia técnica con habilidades de liderazgo, permitiéndome abordar desafíos complejos y entregar resultados excepcionales.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/database.png" alt="Bases de datos y tecnologías backend">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Lenguajes de Programación</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span class="skill-name">Oracle PL/SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Bases de Datos</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span class="skill-name">Oracle Database</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL Server</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks y Servidores</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span class="skill-name">Spring</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Hibernate</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Weblogic Server</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Apache Tomcat</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub/GitLab</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GCP</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>ETL & Datos</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <span class="skill-name">Informatica Power Center</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pipelines con Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">BigQuery</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="virtues" class="virtues-section">
+        <div class="container">
+            <h2 class="section-title">Virtudes Humanas</h2>
+            <p class="section-subtitle">Combinando excelencia técnica con habilidades humanas</p>
+            
+            <div class="virtues-grid">
+                <div class="virtue-card">
+                    <div class="virtue-image">
+                        <img src="images/leadership.png" alt="Liderazgo">
+                    </div>
+                    <h3>Liderazgo</h3>
+                    <p>Capacidad para guiar equipos técnicos hacia objetivos comunes, inspirando excelencia y fomentando la colaboración.</p>
+                </div>
+                
+                <div class="virtue-card">
+                    <div class="virtue-image">
+                        <img src="images/communication.png" alt="Comunicación Asertiva">
+                    </div>
+                    <h3>Comunicación Asertiva</h3>
+                    <p>Habilidad para transmitir ideas técnicas complejas de manera clara y efectiva a diferentes audiencias.</p>
+                </div>
+                
+                <div class="virtue-card">
+                    <div class="virtue-image">
+                        <img src="images/adaptability.png" alt="Adaptabilidad">
+                    </div>
+                    <h3>Adaptabilidad</h3>
+                    <p>Flexibilidad para evolucionar con las tecnologías cambiantes y adaptarme a nuevos entornos y desafíos.</p>
+                </div>
+                
+                <div class="virtue-card">
+                    <div class="virtue-image">
+                        <img src="images/resilience.png" alt="Resiliencia">
+                    </div>
+                    <h3>Resiliencia</h3>
+                    <p>Capacidad para superar obstáculos técnicos y de negocio, manteniendo la determinación ante los desafíos.</p>
+                </div>
+                
+                <div class="virtue-card">
+                    <div class="virtue-image">
+                        <img src="images/strategic_thinking.png" alt="Pensamiento Estratégico">
+                    </div>
+                    <h3>Pensamiento Estratégico</h3>
+                    <p>Visión para planificar soluciones técnicas que se alineen con los objetivos de negocio a largo plazo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Líder de Aplicaciones</h3>
+                        <h4>Zurich Seguros Colombia</h4>
+                        <ul>
+                            <li>Coordinación de implementación técnica de requerimientos de negocio con equipos internos y externos.</li>
+                            <li>Gestión del ciclo completo de desarrollo de software, colaborando con equipos de desarrollo y QA.</li>
+                            <li>Implementación de mejoras en el flujo de entrega de requerimientos a IT.</li>
+                            <li>Monitoreo y gestión del desempeño de aplicaciones, coordinando resolución de incidentes técnicos.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Líder de Desarrollo</h3>
+                        <h4>Novabase</h4>
+                        <ul>
+                            <li>Liderazgo técnico en el desarrollo de 2 productos financieros (front y back).</li>
+                            <li>Guía al equipo en estándares y metodologías ágiles (Scrum).</li>
+                            <li>Supervisión de calidad de código, apoyo en configuración de entornos y coordinación de pruebas con QA.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Expert Engineer</h3>
+                        <h4>Sophos Solutions</h4>
+                        <ul>
+                            <li>Liderazgo técnico en proyectos clave en Banco Falabella, incluyendo reingeniería de sistemas de alertamiento.</li>
+                            <li>Desarrollo de servicios backend (Java) para la aplicación móvil del banco.</li>
+                            <li>Desarrollo de pipelines de datos en Python y workflows de ETL para ingestas al Datalake.</li>
+                            <li>Desarrollo de robot y API (Python) para automatizar la actualización de listas negras.</li>
+                            <li>Desarrollo de módulo de gestión de alertas en Angular e integración con BBDD por medio de JPAs.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2009 - 2018</div>
+                    <div class="timeline-content">
+                        <h3>Project Leader & Consultant</h3>
+                        <h4>Consis International</h4>
+                        <ul>
+                            <li>Gestión y desarrollo de requerimientos de software backend para adaptar el core de seguros ACSELX.</li>
+                            <li>Desarrollo de integraciones backend del core con otras aplicaciones de negocio existentes.</li>
+                            <li>Soporte de incidentes y mejoras al core ACSELX.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2010 - 2011</div>
+                    <div class="timeline-content">
+                        <h3>Application Team Leader</h3>
+                        <h4>NTT Data (antes everis)</h4>
+                        <ul>
+                            <li>Liderazgo técnico en la migración del core ACSELX a un nuevo core de seguros en Allianz Colombia.</li>
+                            <li>Coordinación y gestión de un equipo de desarrollo distribuido en Colombia y España.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2008 - 2009</div>
+                    <div class="timeline-content">
+                        <h3>Technical Leader</h3>
+                        <h4>TCS (Tata Consultancy Services)</h4>
+                        <ul>
+                            <li>Coordinación del desarrollo de ETLs para la migración de datos al nuevo CRM.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2003 - 2008</div>
+                    <div class="timeline-content">
+                        <h3>Consultant Analyst</h3>
+                        <h4>Accenture</h4>
+                        <ul>
+                            <li>Diseño y desarrollo de requerimientos funcionales y técnicos backend para la implementación del core de seguros ACSELX.</li>
+                            <li>Desarrollo de integraciones con corresponsales y sistemas contables (producto SOAT).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Educación y Certificaciones</h2>
+            
+            <div class="education-container">
+                <div class="education-column">
+                    <h3>Educación Formal</h3>
+                    <div class="education-item">
+                        <h4>Especialista en Innovación y Desarrollo de Negocios</h4>
+                        <p class="education-place">Universidad Externado de Colombia, Bogotá D.C.</p>
+                        <p class="education-year">2018</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Ingeniero de Sistemas</h4>
+                        <p class="education-place">Universidad Cooperativa de Colombia, Bogotá D.C.</p>
+                        <p class="education-year">2003</p>
+                    </div>
+                </div>
+                
+                <div class="education-column">
+                    <h3>Certificaciones y Formación Profesional</h3>
+                    <div class="certifications-grid">
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="cert-icon java"></i>
+                            </div>
+                            <div class="certification-info">
+                                <h4>Java Persistence</h4>
+                                <p>Platzi – Julio 2024</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="cert-icon ai"></i>
+                            </div>
+                            <div class="certification-info">
+                                <h4>Inteligencia Artificial</h4>
+                                <p>Universidad Distrital Francisco José de Caldas - Octubre 2023</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="cert-icon ai-tools"></i>
+                            </div>
+                            <div class="certification-info">
+                                <h4>Herramientas de IA para Developers</h4>
+                                <p>Platzi - Octubre 2023</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="cert-icon gcp"></i>
+                            </div>
+                            <div class="certification-info">
+                                <h4>Fundamentos, desarrollo y despliegue con GCP</h4>
+                                <p>Platzi - Junio 2023</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="cert-icon design-patterns"></i>
+                            </div>
+                            <div class="certification-info">
+                                <h4>Patrones de diseño de software</h4>
+                                <p>Platzi - Septiembre 2023</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="cert-icon aws"></i>
+                            </div>
+                            <div class="certification-info">
+                                <h4>AWS Cloud Practitioner</h4>
+                                <p>AWS Training - Noviembre 2021</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="cert-icon scrum"></i>
+                            </div>
+                            <div class="certification-info">
+                                <h4>Scrum Master</h4>
+                                <p>Scrum Agile Institute - Marzo 2017</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item">
+                            <div class="certification-icon">
+                                <i class="cert-icon oracle"></i>
+                            </div>
+                            <div class="certification-info">
+                                <h4>Oracle PL/SQL Developer Associate</h4>
+                                <p>Oracle – 2008</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="contact-icon email"></i>
+                        <p>mauricio.rodriguez@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="contact-icon phone"></i>
+                        <p>+57 300 123 4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="contact-icon location"></i>
+                        <p>Bogotá, Colombia</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                            <i class="social-icon linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link github" aria-label="GitHub">
+                            <i class="social-icon github"></i>
+                        </a>
+                        <a href="#" class="social-link twitter" aria-label="Twitter">
+                            <i class="social-icon twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envíame un mensaje</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">MR</div>
+                <p>&copy; 2025 Mauricio Rodríguez. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-nav">
+                <a href="#about">Sobre Mí</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#virtues">Virtudes</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#education">Educación</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Volver arriba">
+        <i class="arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
